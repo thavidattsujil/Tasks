@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ModelLibrary.MunicipalityDisplayModel>
+
+@{
+    ViewData["Title"] = "View";
+}
+
+
+
+<div>
+    <h4>Recent Uploaded Information</h4>
+    <hr />
+    <table class="table table-bordered table-responsive table-hover" width="80%">
+        <tr>
+            @*<th>Id </th>*@
+            <th>Name </th>
+            <th>Date</th>
+            <th>Result</th>
+        </tr>
+        @foreach (var d in Model)
+        {
+            <tr>
+                @*<td>@d.Id</td>*@
+                <td>@d.Name</td>
+                <td>@d.ReleaseDate</td>
+                <td>@d.Result</td>
+            </tr>
+
+        }
+    </table>
+</div>
+<div>
+  
+    <a asp-action="Index">Back to List</a>
+</div>

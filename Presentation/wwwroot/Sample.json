@@ -1,0 +1,17 @@
+{"Data": {    
+    "Municipality1": {
+        "Name": "Copenhagen",
+        "Date": "2016.01.01",
+        "TaxType": "Yearly"        
+    },
+    "Municipality2": { 
+        "Name": "Konfabulator Widget",
+        "Date": "2016.05.02",
+        "TaxType": "Monthly"       
+    },
+    "Municipality3": {
+        "Name": "Copenhagen3",
+        "Date": "2016.07.10",
+        "TaxType": "Daily"       
+    }
+}}  

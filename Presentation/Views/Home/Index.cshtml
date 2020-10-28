@@ -1,0 +1,38 @@
+﻿@{
+    @model IEnumerable<ModelLibrary.MunicipalityDisplayModel>
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+
+        <div><b></b><br /><br /><br /></div>
+
+        <form asp-action="Index"
+              asp-controller="Home"
+              method="post"
+              enctype="multipart/form-data">
+            <input type="file" name="files" multiple />
+            <input type="submit" value="Upload Selected Files" />
+        </form>
+
+        <table class="table table-bordered table-responsive table-hover" width="80%">
+            <tr>
+                <th>Id </th>
+                <th>Name </th>
+                <th>Date</th>
+                <th>Result</th>
+            </tr>
+            @foreach (var d in Model)
+            {
+                <tr>
+                    <td>@d.Id</td>
+                    <td>@d.Name</td>
+                    <td>@d.ReleaseDate</td>
+                    <td>@d.Result</td>
+                </tr>
+
+            }
+        </table>
+
+
+    </div>
